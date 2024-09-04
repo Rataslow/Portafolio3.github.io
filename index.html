@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!-- hacemos referencia a la hoja de estilos-->
+</head>
+
+<body>
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <!--creamos el container para centrar el navbar-->
+
+            <!-- Aqui encontramos el Navbar https://getbootstrap.com/docs/5.2/components/navbar/-->
+
+            <nav class="navbar navbar-expand-lg navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">RATASLOW WO WO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <!--Cambiamos "me-auto" por "ms-auto" lo que hace que las letras del navbar se corran a la derecha-->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="#C1">Link</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#C2">Cards</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#C3">Descripción</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#C4">Contacto</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Más
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://rodericcuriculum.000webhostapp.com/">Mi Curriculum</a></li>
+                                    <li><a class="dropdown-item" href="https://www.flowcode.com/page/rataslow">Mis redes</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://slowmouse5.wordpress.com">Wordpress</a></li>
+                                    <li><a class="dropdown-item" href="https://eventosamy.webnode.cl">Webdone</a></li>
+                                    li><a class="dropdown-item" href="https://seguridadlopradoweb.000webhostapp.com/">Proyecto de titulo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-warning btn">Enable</a>
+                            </li>
+                        </ul>
+                        <!--Vamos a quitar el formulario-->
+
+                        <!--<form class="d-flex" role="search">
+                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                         <button class="btn btn-outline-success" type="submit">Search</button>
+                       </form> -->
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Slider sacado de https://getbootstrap.com/docs/5.2/components/carousel/-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Portada Spotify</h5>
+                    <p>Esta es la foto que esta en la portada de mi canal de Spotify</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Caratulas</h5>
+                    <p>LP Factores y Portada del sencillo Psicodelico</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Caratulas</h5>
+                    <p>LP Procesos y EP Four</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    
+
+
+    <div class="container mt-3" id="C1">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h1>Rataslow</h1>
+                <!--listgour sacado de https://getbootstrap.com/docs/5.0/components/list-group/-->
+                <div class="list-group">
+                    <a href="https://slowmouse5.wordpress.com" class="list-group-item list-group-item-action active" aria-current="true">
+                        Slowmouse.wordpress
+                    </a>
+                    <a href="https://www.flowcode.com/page/rataslow" class="list-group-item list-group-item-action">Flowcode</a>
+                    <a href="https://linkbe.me/Sharlatanes" class="list-group-item list-group-item-action">Linkbe</a>
+                    <a href="https://linktr.ee/rataslow.prod" class="list-group-item list-group-item-action">Linktr</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"
+                        aria-disabled="true">Proximamente</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--CARDS-->
+
+    <div class="container" id="C2">
+        <div class="row">
+            <!--para insertar las cards necesitamos hacer una div, en este caso usamos "dic.col-4*3" -->
+            <div class="col-12 col-md-4 mt-5"> <!--en movile tendra tamaño 14 y en pc tamaño 4-->
+                <!--De aqui salen las cards https://getbootstrap.com/docs/5.0/components/card/-->
+                <div class="card">
+                    <img src="./img/Factores_Caratula.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Factores</h5>
+                        <p class="card-text">Rataslow se presenta con su primer LP donde recopila canciones con
+                            distintos enfoques musicales y letras
+                        </p>
+                        <a href="https://open.spotify.com/album/0Fo7mJwDZoN7PFwJzoju7r?si=Jm1V_LCOQnerUrZ-TZkKXw" class="btn btn-danger">Ir al albun</a>
+                        <!--el modelo de los botones sale de aqui https://getbootstrap.com/docs/5.2/components/buttons/-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                    <img src="./img/ab6761610000e5ebdde592ee8ab1fbd3eda1a287.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rataslow</h5>
+                        <p class="card-text">Los temas mas reproducidos de Rataslow</p>
+                        <a href="https://open.spotify.com/playlist/2Jk55YN7jmbxCuvjTXOrv1?si=c08d3f83768d4b3e" class="btn btn-success">Ir a la playlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                    <img src="./img/rataslo 2d.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">YouTube</h5>
+                        <p class="card-text">Un LP distinto a lo que nos tiene acostumbrado Rataslow, simplemente "relax and enjoy"
+                        </p>
+                        <a href="https://youtu.be/Deqeez-clF8" class="btn btn-primary">Ir a youtube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--INFORMACION-->
+        <div class="row mt-5" id="C3"> <!--mt es margin top -->
+            <div class="col-12 col-md-8">
+                <h2>¿Ratas low o rata slow? </h2>
+                <P>Es una comparación en la forma que las ratas se tienen que adaptar a nuevos entornos
+                    y sobrevivir de sus depredadores, parecido a como pasa con las expresiones artísticas.
+                    una rata hace lo que debe hacer para sobrevivir y vive muchas veces condicionada.
+                    hay ratas de laboratorio, domésticas y silvestres. </P>
+                <p>
+                    slow: Lo lento es una contradicción a la naturaleza misma de la rata y también
+                    una manera de decir "todo a su tiempo".
+                </p>
+                <a href="https://www.deezer.com/mx/artist/124792432/biography" class="btn btn-primary">Ir a la Descripción</a>
+                <a href="https://youtu.be/KwLd-GK1Fxg" type="button" class="btn btn-outline-info">yutu</a>
+            </div>
+            <div class="col-12 col-md-4 mt-2 mt-md-0">
+                <img src="./img/rataslo 2d.png" class="img-fluid rounded-start">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 pb-5" id="C4">
+            <div class="col-12 col-md-7">
+                <h2>Contacto</h2>
+                <input type="text" class="form-control">
+                <input type="text" class="form-control">
+                <textarea name="" class="form-control"></textarea>
+                <button type="button" class="btn btn-outline-info">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
